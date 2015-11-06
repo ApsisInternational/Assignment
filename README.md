@@ -12,9 +12,23 @@ Prerequisities
 - Styling should be done in a pre-processor such as less, sass or stylus
 - Browser support should be the newest version of Chrome, FF, Safari and also IE10 and IE11.
 
-**Structure**
+### Structure
 
-- Contains a Web API Controller and a corresponding action method that accepts an array of bowling scores and returns the current score. The controller should accept the frames as a JSON object with the following syntax: `{ "frames": [{"first": 3, "second": 4}, {"first": 10, "second": 0}, ... ] }` The controller should return the score as a JSON object with the following syntax: `{ "score": 7 }`
+- Contains a Web API Controller and a corresponding action method that accepts an array of bowling scores and returns the current score. The controller should accept the frames as a JSON object with the following syntax: 
+```
+	{ "frames": [
+		{
+		"first": 3, 
+		"second": 4
+		}, 
+		{
+		"first": 10, 
+		"second": 0}, 
+		...
+		] 
+	} 
+```
+The controller should return the score as a **JSON** object with the following syntax: `{ "score": 7 }`
 
 - Displays input elements that enables the user to enter the result of one round. You can for example use two input elements of type text, one for each roll, and a submit button for submitting scores.
 
@@ -24,7 +38,7 @@ Prerequisities
 
 - When the user enters the result for another round, send all played rounds so far to the action method.
 
-**Example scenario**
+### Example scenario
 
 Player starts a new game by visiting the web site:
 
@@ -42,7 +56,7 @@ Player rolls a 4 and 5:
 
 etc.
 
-**Rules of bowling**
+### Rules of bowling
 
 * A game consists of ten frames. Frame 1-9 are composed of two rolls. Frame 10 can be composed of up to three rolls depending on if the first rolls in the frame is a strike or a spare.
 
@@ -58,11 +72,11 @@ etc.
 
  The tenth frame may be composed of up to three rolls: the bonus roll(s) following a strike or spare in the tenth (sometimes referred to as the eleventh and twelfth frames) are fill ball(s) used only to calculate the score of the mark rolled in the tenth.
 
-**Deadline**
+### Deadline
 
 You have 72 hours to complete the assignment.
 
-**Last words**
+### Last words
 
 Keep the code clean with a structure that is object oriented and easy to read and to test.
 
